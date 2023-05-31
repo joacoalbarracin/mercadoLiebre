@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+header {
+    width: 100vw;
+    background-color: #EAC926;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.logo{
+    width: 30%;
+    padding: 10px;
+}
+
+.buscador{
+    width: 70%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+
+header .buscador input {
+    background-color: #FFF;
+    border: 1px solid #666;
+    border-right: none;
+    color: #666;
+    width: 70%;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+header .buscador .lupa i {
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid #666;
+    border-left: none;
+    color: #666;
+    padding: 2.7px;
+}
+
+header .top-header p {
+    text-align: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+}
+
+header div.burger-menu i {
+    color: #FFF;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+.banner{
+    width: 100vw;
+}
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+main section h3 {
+    margin: 15px 0 15px 0;
+    font-size: 24px;
+    color: #666;
+}
+
+main section article p.precio{
+    width: 70%;
+}
+
+main section article p.descuento{
+    width: 30%;
+    color: #39b54a;
+}
+
+main section article .desc-prod {
+    font-size: 16px;
+    display: none;
+    transition: all 0.3s;
+}
+
+main section article {
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    background-color: #FFF;
+}
+
+main section article img {
+    width: 100%;
+}
+
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.3s;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer section {
+    text-align: center;
+}
+
+footer section article h4 {
+    font-size: 20px;
+}
+
+footer section article p {
+    font-size: 12px;
+}
+
+footer section article i {
+    color: #1259c3;
+    font-size: 2em;
+    margin: 0px 0px 10px 0px;
+}
+
+footer section article p.derechos{
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#formulario-registro{
+    background-color: #ebebeb;
+}
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+form div {
+    margin-bottom: 10px;
+    border-radius: 5%;
+    width: 100%;
+}
+
+form div input {
+    margin-left: 10px;
+}
+
+form h4 {
+    margin-bottom: 10px;
+}
+
+.text-field{
+    padding: 5px;
+}
+
+.selecciones{
+    display: flex;
+}
+
+.interes{
+    flex-direction: column;
+}
+
+.botones {
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+}
+
+.botonForm{
+    width: 40%;
+    padding: 2px 15px 2px 15px;
+    margin: 0px 10px 10px 0px;
+}
+
+.botonForm:hover {
+    background-color: #0022AA;
+}
+
+.botonSubmit{
+    background-color: #1259c3;
+    color: #ebebeb;
+}
+
+.botonReset{
+    background-color: #1259c3;
+    color: #ebebeb;
+}
+
+#formulario-login {
+    background-color: #ebebeb;
+}
+
+.ingreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.ingreso div {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.ingreso div .botonSubmit {
+    margin-bottom: 15px;
+    padding: 2px 15px 2px 15px;
+}
+
+.ingreso div .botonSubmit:hover {
+    background-color: #0022AA;
+}
+
+@media (min-width: 361px){
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .desc-prod {
+        display: block;
+    }
+    main section article {
+        width: 45%;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header div.burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    main section article {
+        width: 22.5%;
+    }
+    .logo {
+        max-width: 35%;
+    }
+    main section article .desc-prod {
+        display: none;
+    }
+    main section article:hover .desc-prod {
+        display: block;
+    }
+    main section article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    main section article:hover i {
+        transform: rotate(-90deg);
+    }
+    footer section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    footer section article {
+        width: 31%;
+    }
+    footer section article p.derechos {
+        margin: 20px 0 20px 10px;
+    }
+    footer section article i:hover {
+        color: #5e9af3;
+    }
+}
